@@ -385,9 +385,8 @@ body {
 
   .select-card {
     padding: 10px;
+    max-width: 310px;
   }
-
-  
   .select-mode-container {
     height: 95vh;
   }
