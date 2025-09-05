@@ -1,0 +1,411 @@
+.barlow-thin {
+  font-family: "Barlow", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.barlow-extralight {
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.barlow-light {
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.barlow-regular {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.barlow-medium {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.barlow-semibold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.barlow-bold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.barlow-extrabold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.barlow-black {
+  font-family: "Barlow", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.barlow-thin-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.barlow-extralight-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.barlow-light-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.barlow-regular-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.barlow-medium-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.barlow-semibold-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.barlow-bold-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.barlow-extrabold-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.barlow-black-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/*FONT PACKAGE UPTOP*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow", sans-serif;
+}
+
+body {
+  background-color: #120819;
+  color: #F5F3F6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.main-title {
+  font-size: 3rem;
+  color: #ffefade3;
+  font-weight: 600;
+  margin-top: 1vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3vh;
+}
+
+/*select section*/
+.select-mode-container {
+  position: absolute;
+  background-color: #120819;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.select-mode-title {
+  padding-left: 50px;
+  margin-bottom: 2vh;
+  color: #120819;
+}
+
+.select-box-container {
+  position: absolute;
+  background-color: #120819;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.select-card {
+  background-color: #b8b3e9be;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.select-box-container h2 {
+  font-weight: 500;
+  margin-bottom: 2vh;
+  color: #120819;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5vh;
+  gap: 2vw;
+}
+
+.player-btn {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: #F5F3F6;
+  background-color: #120819;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: ease 0.3s;
+  box-shadow: 0 1px 3px #06030894;
+}
+
+#singlePlayer:hover {
+  font-size: 1.7rem;
+  color: #060308;
+  background-color: #ffefadd5;
+  transition: ease-in 0.3s;
+}
+
+#multiPlayer:hover {
+  font-size: 1.7rem;
+  color: #060308;
+  background-color: #ffefadd5;
+  transition: ease-in 0.3s;
+}
+
+#playerX:hover {
+  color: #8CA351;
+  font-size: 1.7rem;
+}
+
+#playerO:hover {
+  color: #CA814D;
+  font-size: 1.7rem;
+}
+
+/*main section*/
+#currentPlayer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  font-weight: 500;
+  background-color: #34194dd0;
+  padding: 5px 2vw;
+  border-radius: 5px;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 15px;
+  margin-top: 2vh;
+  background-color: #b8b3e925;
+  padding: 1rem;
+  border-radius: 15px;
+
+}
+
+.field {
+  font-size: 5rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #190c1e8a;
+  color: #26BABA;
+  height: 16vh;
+  width: 16vh;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.score-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #34194dd0;
+  padding: 5px 2vw;
+  max-width: 380px;
+  border-radius: 5px;
+  margin-top: 3vh;
+}
+
+.score-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.scores {
+  display: flex;
+  gap: 60px;
+  margin-top: 1vh;
+}
+
+.player-score {
+  font-weight: 400;
+}
+
+.score-value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#scoreX {
+  color: #8CA351;
+}
+
+#scoreTie {
+  color: #FFEFAD;
+}
+
+#scoreO {
+  color: #CA814D;
+}
+
+.control-board {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.control-btn {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #120819;
+  border: solid 2px #ffefadd5;
+  background-color: #ffefadd5;
+  padding: 10px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 3vh;
+  margin-left: 1vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.control-btn:hover {
+  font-size: 1.1rem;
+  transition: ease 0.3s;
+}
+
+#newGame:hover {
+  color: #FFEFAD;
+  background-color: #060308;
+  transition: ease-in 0.3s;
+}
+
+#resetScore {
+  color: #ffefade0;
+  background-color: #060308;
+}
+
+#resetScore:hover {
+  color: #060308;
+  background-color: #ffefadd5;
+  transition: ease-in 0.3s;
+
+}
+
+.copywrite {
+  display: flex;
+  margin-top: 1.5vh;
+  margin-bottom: 1vh;
+  font-size: 0.8rem;
+  color: #F5F3F6;
+  text-align: center;
+}
+
+@media (max-width: 870px) {
+  .options {
+    gap: 4vw;
+  }
+
+  #playerX {
+    color: #8CA351;
+  }
+
+  #playerO {
+    color: #CA814D;
+  }
+}
+
+@media (max-width:460px) {
+  .main-title {
+    margin-top: 6vh;
+  }
+
+  .select-box-container {
+    height: 95vh;
+  }
+
+  .select-card {
+    padding: 10px;
+  }
+
+  #currentPlayer {
+    margin-bottom: 2vh;
+  }
+
+  #game-board {
+    grid-gap: 8px;
+    padding: 0.7rem;
+  }
+
+  .field {
+    font-size: 5rem;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    height: 25vw;
+    width: 25vw;
+  }
+
+  .control-board {
+    margin-top: 1vh;
+  }
+}

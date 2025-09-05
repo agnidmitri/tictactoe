@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>TicTacToe</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="main-title">Tic Tac Toe</h1>
+    </header>
+    <main class="container">
+        <section id="selectBoxGameMode" class="select-mode-container">
+            <div class="select-card">
+                <h2 class="select-mode-title">Select game mode</h2>
+                <div class="options">
+                    <button id="singlePlayer" class="player-btn">Single player</button>
+                    <button id="multiPlayer" class="player-btn">Multi player</button>
+                </div>
+            </div>
+        </section>
+        <section id="selectBox" class="select-box-container">
+            <div class="select-card">
+                <h2>Select which player you want to be</h2>
+                <div class="options">
+                    <button id="playerX" class="player-btn">Player ✕</button>
+                    <button id="playerO" class="player-btn">Player ◯</button>
+                </div>
+            </div>
+        </section>
+        <h2 id="currentPlayer"></h2>
+        <section id="game-board" aria-labelledby="game-board">
+            <button class="field" data-index="0"></button>
+            <button class="field" data-index="1"></button>
+            <button class="field" data-index="2"></button>
+            <button class="field" data-index="3"></button>
+            <button class="field" data-index="4"></button>
+            <button class="field" data-index="5"></button>
+            <button class="field" data-index="6"></button>
+            <button class="field" data-index="7"></button>
+            <button class="field" data-index="8"></button>
+        </section>
+        <section class="score-board">
+            <h2 class="score-title">Current Score</h2>
+            <div class="scores">
+                <div class="score">
+                    <h3 class="player-score">Player ✕</h3>
+                    <p class="score-value" id="scoreX">0</p>
+                </div>
+                <div class="score">
+                    <h3 class="player-score">Ties</h3>
+                    <p class="score-value" id="scoreTie">0</p>
+                </div>
+                <div class="score">
+                    <h3 class="player-score">Player ◯</h3>
+                    <p class="score-value" id="scoreO">0</p>
+                </div>
+            </div>
+        </section>
+        <section class="control-board">
+            <div class="controls">
+                <button id="newGame" class="control-btn">New Game</button>
+                <button id="resetScore" class="control-btn">Reset Score</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="copywrite">Developed by Agni Lima © 2025</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
