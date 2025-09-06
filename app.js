@@ -12,7 +12,7 @@ const winPatterns = [
   [0, 3, 6],
   [1, 4, 7],
   [2, 5, 8], //vertical
-  [1, 4, 8],
+  [0, 4, 8],
   [2, 4, 6], //diagonal
 ];
 let singlePlayer = true;
