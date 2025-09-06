@@ -258,6 +258,9 @@ body {
   width: 16vh;
   transition: all 0.2s ease;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .score-board {
@@ -401,8 +404,7 @@ body {
   }
 
   .field {
-    font-size: 5rem;
-    text-align: center;
+    font-size: 3rem;
     border-radius: 5px;
     border: none;
     height: 25vw;
